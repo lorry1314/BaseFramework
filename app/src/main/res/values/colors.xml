@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="black_alpha_100">#ff000000</color>
+    <color name="black_alpha_87">#de000000</color>
+    <color name="black_alpha_54">#8a000000</color>
+    <color name="black_alpha_26">#42000000</color>
+    <color name="black_alpha_12">#1f000000</color>
+
+
+    <color name="white_alpha_100">#ffffffff</color>
+    <color name="white_alpha_70">#b2ffffff</color>
+    <color name="white_alpha_30">#4cffffff</color>
+    <color name="white_alpha_12">#1fffffff</color>
+
+    <!-- 普通文字 -->
+    <color name="text_black">@color/black_alpha_87</color>
+    <color name="text_or_icons_white">@color/white_alpha_100</color>
+
+    <!-- 减淡文字 -->
+    <color name="secondary_text_or_icons_black">@color/black_alpha_54</color>
+    <color name="secondary_text_white">@color/white_alpha_70</color>
+
+    <!-- 禁用状态/提示文字 -->
+    <color name="disabled_or_hint_text_black">@color/black_alpha_26</color>
+    <color name="disabled_or_hint_text_white">@color/white_alpha_30</color>
+
+    <!-- 分隔线 -->
+    <color name="dividers_black">@color/black_alpha_12</color>
+    <color name="dividers_white">@color/white_alpha_12</color>
+
+    <!-- 图标正常状态 -->
+    <color name="icon_black_normal">@color/black_alpha_54</color>
+    <color name="icon_white_normal">@color/white_alpha_100</color>
+
+    <!-- 图标禁用状态状态 -->
+    <color name="icon_black_disabled">@color/black_alpha_26</color>
+    <color name="icon_white_disabled">@color/white_alpha_30</color>
+
+
+</resources>

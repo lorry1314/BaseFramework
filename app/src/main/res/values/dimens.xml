@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- 桌面图标尺寸 -->
+    <dimen name="icon_launcher">48dp</dimen>
+
+    <!-- 文字排版 常用字号： -->
+    <dimen name="text_small_tips">12sp</dimen> <!-- 小字提示 -->
+    <dimen name="text_normal_or_btn">14sp</dimen> <!-- （桌面端13sp） 正文/按钮文字 -->
+    <dimen name="text_small_title">16sp</dimen> <!--  小标题 -->
+    <dimen name="text_appbar">20sp</dimen> <!-- Appbar文字 -->
+    <dimen name="text_big_title">24sp</dimen> <!-- 大标题 -->
+    <dimen name="text_large">34sp</dimen> <!-- 超大号文字 -->
+    <dimen name="text_s_large">45sp</dimen> <!-- 超大号文字 -->
+    <dimen name="text_ss_large">56sp</dimen> <!-- 超大号文字-->
+    <dimen name="text_sss_large">112sp</dimen> <!-- 超大号文字 -->
+
+    <dimen name="height_status_bar">24dp</dimen><!-- 顶部状态栏高度 -->
+    <dimen name="height_appbar_min">56dp</dimen><!-- Appbar最小高度 -->
+    <dimen name="height_bottom_bar">48dp</dimen><!-- 底部导航栏高度 -->
+    <dimen name="size_float_btn_56">56dp</dimen><!-- 悬浮按钮尺寸 -->
+    <dimen name="size_float_btn_40">40dp</dimen><!-- 悬浮按钮尺寸 -->
+    <dimen name="size_user_icon_64">64dp</dimen><!-- 用户头像尺寸 -->
+    <dimen name="size_user_icon_40">40dp</dimen><!-- 用户头像尺寸 -->
+    <dimen name="size_icon_click_area">48dp</dimen><!-- 小图标点击区域-->
+    <dimen name="drawer_distance_from_right">56dp</dimen><!-- 侧边抽屉到屏幕右边的距离 -->
+    <dimen name="card_spacing">8dp</dimen><!-- 卡片间距 -->
+    <dimen name="divider_blank">8dp</dimen><!-- 分隔线上下留白 -->
+    <dimen name="major_element_blank">16dp</dimen><!-- 大多元素的留白距离 -->
+    <dimen name="screen_alignment">16dp</dimen><!-- 屏幕左右对齐基线 -->
+    <dimen name="text_left_alignment">72dp</dimen><!-- 文字左侧对齐基线 -->
+
+    <dimen name="text_underline">2dp</dimen><!-- 文字下划线 -->
+    <dimen name="height_input_click">48dp</dimen><!-- 输入框点击区域 -->
+    <dimen name="height_input_click_with_hint">72dp</dimen><!-- 输入框点击区域 -->
+
+
+
+
+
+
+
+</resources>
