@@ -1,16 +1,16 @@
 package com.musejianglan.baseframework.utils;
 /**
  * gson解析工具类
- * @author 任孝民
+ * @author liu
  */
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
 import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class GsonTools {
 	private static final String TAG = GsonTools.class.getName();

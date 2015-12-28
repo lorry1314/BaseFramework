@@ -15,9 +15,8 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.MediaStore;
-
-import com.baidai.baidaitravel.common.assist.Base64;
-import com.baidai.baidaitravel.common.log.Log;
+import android.util.Base64;
+import android.util.Log;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
