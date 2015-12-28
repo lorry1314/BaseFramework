@@ -8,8 +8,7 @@ import android.util.Log;
 
 
 /**
- * @author MaTianyu
- * @date 2015-04-19
+ *
  */
 public class DisplayUtil {
     private static final String TAG = DisplayUtil.class.getSimpleName();
