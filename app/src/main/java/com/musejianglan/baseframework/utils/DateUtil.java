@@ -295,4 +295,6 @@ public final class DateUtil {
 	public static String getyyyy_MM_TimeByMiddleDash(Date date) {
 		return yyyy_MM.format(date);
 	}
+
+
 }

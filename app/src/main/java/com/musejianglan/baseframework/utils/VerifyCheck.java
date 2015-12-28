@@ -52,23 +52,6 @@ public class VerifyCheck {
 	}
 
 	/**
-	 * 验证输入的密码和输入的确认密码是否是�?���?
-	 * 
-	 * @param pwd
-	 *            当前密码
-	 * @param confirmPwd
-	 *            确认密码
-	 * @return
-	 */
-	public static boolean isPwdEqualsConfirmPwd(String pwd, String confirmPwd) {
-		if (pwd.equals(confirmPwd)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	/**
 	 * 验证手机号码的格式是否正�?
 	 * 
 	 * @param mobileString

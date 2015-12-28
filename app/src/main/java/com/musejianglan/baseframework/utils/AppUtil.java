@@ -1,18 +1,23 @@
 package com.musejianglan.baseframework.utils;
 
+import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.Build;
+import android.provider.Settings;
+import android.telephony.TelephonyManager;
 
+import java.io.File;
 import java.lang.reflect.Field;
 import java.util.List;
 
 /**
  * @author MaTianyu
- * @date 2014-12-10
  */
 public class AppUtil {
 
@@ -82,4 +87,39 @@ public class AppUtil {
        }
        return statusBarHeight;
    }
+
+    /**判断当前app是在前台还是后台
+     * @param context
+     * @return
+     */
+    public static boolean isApplicationBackground(final Context context) {
+        ActivityManager am = (ActivityManager) context
+                .getSystemService(Context.ACTIVITY_SERVICE);
+        @SuppressWarnings("deprecation")
+        List<ActivityManager.RunningTaskInfo> tasks = am.getRunningTasks(1);
+        if (!tasks.isEmpty()) {
+            ComponentName topActivity = tasks.get(0).topActivity;
+            if (!topActivity.getPackageName().equals(context.getPackageName())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**安装APK
+     * @param context
+     * @param file
+     */
+    public static void installApk(Context context, File file) {
+        Intent intent = new Intent();
+        intent.setAction("android.intent.action.VIEW");
+        intent.addCategory("android.intent.category.DEFAULT");
+        intent.setType("application/vnd.android.package-archive");
+        intent.setDataAndType(Uri.fromFile(file),
+                "application/vnd.android.package-archive");
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+    }
+
+
 }
