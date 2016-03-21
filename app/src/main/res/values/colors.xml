@@ -40,6 +40,7 @@
     <!-- 图标禁用状态状态 -->
     <color name="icon_black_disabled">@color/black_alpha_26</color>
     <color name="icon_white_disabled">@color/white_alpha_30</color>
+    <color name="black">#000000</color>
 
 
 </resources>

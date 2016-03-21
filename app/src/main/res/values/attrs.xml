@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 声明TitleBar属性的标签 -->
+    <declare-styleable name="TitleBar">
+        <attr name="title_txt" format="string"/>
+        <attr name="show_right_txt_btn" format="boolean"/>
+        <attr name="show_right_img" format="boolean"/>
+        <attr name="show_left_img_btn" format="boolean"/>
+        <attr name="right_txt_btn_str" format="string"/>
+        <attr name="left_txt_btn_str" format="string"/>
+        <attr name="show_left_txt_btn" format="boolean"/>
+
+        <attr name="right_img_src" format="reference"/>
+        <attr name="left_img_src" format="reference"/>
+
+        <attr name="titleSize" format="dimension"/>
+        <attr name="titleColor" format="color"/>
+
+    </declare-styleable>
+</resources>
