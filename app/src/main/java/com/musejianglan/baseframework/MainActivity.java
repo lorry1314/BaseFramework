@@ -4,11 +4,15 @@ package com.musejianglan.baseframework;
 import android.os.Bundle;
 import android.view.View;
 
+import com.musejianglan.baseframework.annotation.ViewInject;
 import com.musejianglan.baseframework.base.BaseActivity;
 import com.musejianglan.baseframework.utils.ToastUtil;
 import com.musejianglan.baseframework.widget.TitleBar;
 
 public class MainActivity extends BaseActivity {
+
+    @ViewInject(R.id.titlebar)
+    private TitleBar titlebar;
 
     @Override
     public int getLayoutRes() {
@@ -18,7 +22,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void dealAfterInitView(Bundle savedInstanceState) {
-        TitleBar titlebar = (TitleBar) findViewById(R.id.titlebar);
 
         titlebar.setOnLeftImgBackClickListener(new TitleBar.OnLeftImgBackClickListener() {
             @Override

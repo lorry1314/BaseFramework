@@ -15,5 +15,10 @@ public class BaseApp extends Application {
     public void onCreate() {
         super.onCreate();
         mContext = this;
+
+        if (!Const.DEBUG) { // release模式抓取系统异常，防止弹窗
+            CustomCrashHandler mCustomCrashHandler = CustomCrashHandler.getInstance();
+            mCustomCrashHandler.setCustomCrashHanler(mContext);
+        }
     }
 }
