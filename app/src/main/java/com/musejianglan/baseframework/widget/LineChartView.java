@@ -9,7 +9,7 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.musejianglan.chartdemo.R;
+import com.musejianglan.baseframework.R;
 
 import java.util.ArrayList;
 
