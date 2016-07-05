@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.musejianglan.baseframework.annotation.ViewInject;
+import com.musejianglan.baseframework.app.AppManager;
 
 import java.lang.reflect.Field;
 
@@ -20,6 +21,13 @@ public abstract class BaseActivity extends Activity {
         setContentView(getLayoutRes());
         initView();
         dealAfterInitView(savedInstanceState);
+        AppManager.getAppManager().addActivity(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        AppManager.getAppManager().finishActivity();
     }
 
     public abstract int getLayoutRes();
